@@ -12,5 +12,5 @@ RUN useradd -ms /bin/bash server
 RUN chown -hR server /home/server
 USER server
 
-CMD ["bash", "webserve.sh"]
+CMD ["bash", "run.sh"]
 
