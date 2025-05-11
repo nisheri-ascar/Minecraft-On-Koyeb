@@ -1,14 +1,14 @@
 #!/bin/bash
 
-paperServerVersion="1.21.4"
-paperBuildNumber=299
+paperServerVersion=1.21.4
+paperBuildNumber=229
 vvVersion="5.3.2"
 vbVersion="5.3.2"
 vrVersion="4.0.7"
 
 
-# Download Main plugin
-wget -q https://api.papermc.io/v2/projects/paper/versions/${paperServerVersion}/builds/${paperBuildNumber}/downloads/paper-${paperServerVersion}-${paperBuildNumber}.jar -O server/server.jar
+# Download Main jar
+wget https://api.papermc.io/v2/projects/paper/versions/${paperServerVersion}/builds/${paperBuildNumber}/downloads/paper-${paperServerVersion}-${paperBuildNumber}.jar -O server/server.jar
 
 # Download ViaVersion and its friends
 
