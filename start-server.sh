@@ -1,7 +1,7 @@
 #!/bin/bash
 # You can either add or comment to remove a flag for convenience
 
-memory=450M
+memory=400M
 JAVA_FLAGS=(
   -Xms${memory}
   -Xmx${memory}
@@ -24,7 +24,7 @@ JAVA_FLAGS=(
   -Daikars.new.flags=true
   -XX:G1NewSizePercent=30
   -XX:G1MaxNewSizePercent=40
-  -XX:G1HeapRegionSize=8M
+  -XX:G1HeapRegionSize=2M
   -XX:G1ReservePercent=20
 )
 
