@@ -2,4 +2,4 @@
 
 ./webserve.sh &
 ./setup.sh &&
-./start.server.sh
+./start-server.sh
