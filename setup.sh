@@ -19,6 +19,6 @@ wget -q https://github.com/ViaVersion/ViaBackwards/releases/download/${vbVersion
 wget -q https://github.com/ViaVersion/ViaRewind/releases/download/${vrVersion}/ViaRewind-${vrVersion}.jar -O server/plugins/ViaRewind.jar
 
 # Download Geyser, we don't need versioning of it yet it depends on ViaVersion to work if server is older/newer
-wget -q https://download.geysermc.org/v2/projects/geyser/versions/latest/builds/latest/downloads/spigot -O server/Geyser-Spigot.jar
+wget -q https://download.geysermc.org/v2/projects/geyser/versions/latest/builds/latest/downloads/spigot -O server/plugins/Geyser-Spigot.jar
 
 
