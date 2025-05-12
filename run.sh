@@ -3,4 +3,4 @@
 ./webserve.sh &
 ./playit.sh &
 ./setup.sh &&
-./start-server.sh
+./start-server.sh &
