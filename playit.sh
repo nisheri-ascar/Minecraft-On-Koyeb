@@ -7,4 +7,4 @@ if [ -z "$PLAYIT_SECRET_KEY" ]; then
     exit 127
 fi
 
-bin/playit-binary --secret=${PLAYIT_SECRET_KEY} --platform_docker -s
+bin/playit-binary --secret=${PLAYIT_SECRET_KEY} --platform_docker -s >> /dev/null
