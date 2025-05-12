@@ -7,4 +7,4 @@ if [ -z "$PLAYIT_SECRET_KEY" ]; then
     exit 127
 fi
 
-docker run --rm --net=host -e SECRET_KEY=${PLAYIT_SECRET_KEY} ghcr.io/playit-cloud/playit-agent:0.15
+bin/playit-binary --secret=${PLAYIT_SECRET_KEY} --platform_docker #&> ~/playit.log

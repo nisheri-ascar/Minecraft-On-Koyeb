@@ -9,7 +9,7 @@ vbVersion="5.3.2"
 vrVersion="4.0.7"
 
 wget https://github.com/playit-cloud/playit-agent/releases/download/v${playitVersion}/playit-linux-amd64 -O bin/playit-binary
-chmod 777 playit-binary
+chmod 777 bin/playit-binary
 
 # Download Main jar
 wget -q https://api.papermc.io/v2/projects/paper/versions/${paperServerVersion}/builds/${paperBuildNumber}/downloads/paper-${paperServerVersion}-${paperBuildNumber}.jar -O server/server.jar
