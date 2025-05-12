@@ -3,7 +3,7 @@ FROM ubuntu:latest
 
 RUN apt-get update -y
 RUN apt-get upgrade -y
-RUN apt-get install openjdk-21-jre-headless vim lighttpd wget busybox -y
+RUN apt-get install openjdk-21-jre-headless vim darkhttpd wget busybox -y
 
 RUN useradd -ms /bin/bash server
 WORKDIR /home/server

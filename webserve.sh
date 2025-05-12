@@ -1,3 +1,3 @@
 #!/bin/bash
-lighttpd -D -f lighttpd.conf
+darkhttpd /home/server/web --port 8000
 
