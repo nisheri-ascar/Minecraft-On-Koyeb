@@ -8,6 +8,7 @@ RUN apt-get install openjdk-21-jre-headless vim lighttpd wget busybox -y
 RUN useradd -ms /bin/bash server
 WORKDIR /home/server
 COPY . .
+COPY web/ /var/www/html
 RUN chown -hR server /home/server
 USER server
 EXPOSE 8000
