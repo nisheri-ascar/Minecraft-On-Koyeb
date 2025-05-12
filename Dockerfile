@@ -1,8 +1,7 @@
 # Dockerfile
 FROM archlinux:latest
 
-RUN pacman -Syu | yes
-RUN pacman -S jre21-openjdk-headless vim darkhttpd | yes
+RUN yes | pacman -S jre21-openjdk-headless vim darkhttpd
 
 RUN useradd -ms /bin/bash server
 WORKDIR /home/server
