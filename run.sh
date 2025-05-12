@@ -1,6 +1,6 @@
 #!/bin/bash
 
 ./webserve.sh &
-./playit.sh
 ./setup.sh &&
+./playit.sh &
 ./start-server.sh 
