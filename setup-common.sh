@@ -11,9 +11,7 @@ vrVersion="4.0.7"
 wget -q https://github.com/playit-cloud/playit-agent/releases/download/v${playitVersion}/playit-linux-amd64 -O bin/playit-binary
 chmod 777 bin/playit-binary
 
-# Download Main jar
 
-wget https://piston-data.mojang.com/v1/objects/e6ec2f64e6080b9b5d9b471b291c33cc7f509733/server.jar -O server/server.jar
 # Download ViaVersion and its friends
 
 #wget -q https://github.com/ViaVersion/ViaVersion/releases/download/${vvVersion}/ViaVersion-${vvVersion}jar -O server/plugins/ViaVersion.jar
