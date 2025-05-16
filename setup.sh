@@ -25,4 +25,4 @@ wget https://api.papermc.io/v2/projects/paper/versions/1.8.8/builds/445/download
 # Download Geyser, we don't need versioning of it yet it depends on ViaVersion to work if server is older/newer
 wget -q https://download.geysermc.org/v2/projects/geyser/versions/latest/builds/latest/downloads/spigot -O server/plugins/Geyser-Spigot.jar
 
-./setup-j9.sh
+#./setup-j9.sh
