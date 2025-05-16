@@ -2,8 +2,8 @@
 
 # Modify each variables if you wish for newer versions
 playitVersion=0.15.26
-paperServerVersion=1.13.2
-paperBuildNumber=657
+paperServerVersion=1.21.4
+paperBuildNumber=230
 vvVersion="5.3.2"
 vbVersion="5.3.2"
 vrVersion="4.0.7"
