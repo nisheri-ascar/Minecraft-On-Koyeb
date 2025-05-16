@@ -4,3 +4,5 @@ wget https://github.com/ibmruntimes/semeru8-binaries/releases/download/jdk8u452-
 
 tar -zxvf j9.tar.gz
 export PATH=$PATH:/home/server/jdk8u452-b09-jre/bin
+echo $PATH
+/home/server/jdk8u452-b09-jre/bin/java -version
