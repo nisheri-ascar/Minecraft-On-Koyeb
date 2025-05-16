@@ -1,6 +1,6 @@
 #!/bin/bash
 
 ./webserve.sh &
-./setup.sh && echo "setup complete!" && sleep 30 
+./setup.sh && echo "setup complete!"
 ./playit.sh &
 ./start-server.sh 
