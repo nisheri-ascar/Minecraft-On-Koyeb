@@ -5,7 +5,6 @@ memory=350M
 JAVA_FLAGS=(
   -Xms${memory}
   -Xmx${memory}
-  --add-modules=jdk.incubator.vector
   -XX:+UnlockExperimentalVMOptions 
   -XX:+UseG1GC 
   -XX:G1NewSizePercent=20 
