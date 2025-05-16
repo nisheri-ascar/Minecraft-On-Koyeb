@@ -14,6 +14,9 @@ chmod 777 bin/playit-binary
 # Download Main jar
 #wget -q https://api.papermc.io/v2/projects/paper/versions/${paperServerVersion}/builds/${paperBuildNumber}/downloads/paper-${paperServerVersion}-${paperBuildNumber}.jar -O server/server.jar
 wget -q https://downloads.hpfxd.com/v2/projects/pandaspigot/versions/1.8.8/builds/latest/downloads/paperclip -O server/server.jar
+
+# prepare fabric incase it doesnt work
+# wget https://meta.fabricmc.net/v2/versions/loader/1.14/0.16.14/1.0.3/server/jar -O server/server.jar
 # Download ViaVersion and its friends
 
 #wget -q https://github.com/ViaVersion/ViaVersion/releases/download/${vvVersion}/ViaVersion-${vvVersion}jar -O server/plugins/ViaVersion.jar
