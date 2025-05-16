@@ -15,4 +15,4 @@ JAVA_FLAGS=(
 )
 
 cd server
-java -jar server.jar
+java "${JAVA_FLAGS[@]}" -jar server.jar
