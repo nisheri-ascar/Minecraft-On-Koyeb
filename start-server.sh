@@ -53,4 +53,4 @@ JAVA_FLAGS=(
 
 unset JAVA_FLAGS
 cd server
-j9-java8 -jar server.jar
+j9-java8 -Xms256M -Xmx256M -jar server.jar
