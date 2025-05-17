@@ -9,8 +9,8 @@ RUN wget -q https://download.oracle.com/graalvm/21/latest/graalvm-jdk-21_linux-x
 	&& ln -s /opt/graalvm-jdk-21.0.7+8.1/bin/java /bin/java
 
 WORKDIR /tmp
-RUN export paperServerVersion=1.21.4 \
-	&& export paperBuildNumber=230 \
+RUN export paperServerVersion=1.16.5 \
+	&& export paperBuildNumber=794 \
 	&& echo "Patching jar" \
  	&& wget -q https://api.papermc.io/v2/projects/paper/versions/${paperServerVersion}/builds/${paperBuildNumber}/downloads/paper-${paperServerVersion}-${paperBuildNumber}.jar -O /tmp/server.jar \
   	&& java -jar /tmp/server.jar --paper-dir=/tmp/ --initSettings \
