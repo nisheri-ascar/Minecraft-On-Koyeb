@@ -35,6 +35,11 @@ RUN wget https://github.com/ibmruntimes/semeru8-binaries/releases/download/jdk8u
 #	&& rm -rf /tmp/* 
 # above applied shitty workaround for paper below 1.19, doesnt support --initSettings option
 # TODO: EULA_BOOLEAN
+#really small swap just to keep things alive
+RUN dd if=/dev/zero of=/swapfile bs=1M count=128 \
+    && chmod 600 /swapfile \
+    && mkswap /swapfile \
+    && swapon /swapfile 
 
 RUN useradd -ms /bin/bash server
 WORKDIR /home/server
