@@ -14,6 +14,8 @@ RUN wget https://download.oracle.com/graalvm/21/latest/graalvm-jdk-21_linux-x64_
 RUN useradd -ms /bin/bash server
 
 WORKDIR $WDR
+RUN ./setup-server-jar.sh
+COPY /tmp/server.jar ./server
 COPY . .
 RUN chown -hR server /home/server
 USER server
