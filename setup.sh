@@ -14,8 +14,7 @@ chmod 777 bin/playit-binary
 # Download Main jar
 # wget -q https://api.papermc.io/v2/projects/paper/versions/${paperServerVersion}/builds/${paperBuildNumber}/downloads/paper-${paperServerVersion}-${paperBuildNumber}.jar -O server/server.jar
 #wget -q https://downloads.hpfxd.com/v2/projects/pandaspigot/versions/1.8.8/builds/latest/downloads/paperclip -O server/server.jar
-wget https://piston-data.mojang.com/v1/objects/b58b2ceb36e01bcd8dbf49c8fb66c55a9f0676cd/server.jar -O server/server.jar
-
+./setup-vanilla-jar.sh
 
 # Download ViaVersion and its friends
 

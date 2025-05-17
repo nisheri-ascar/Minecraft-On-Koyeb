@@ -2,7 +2,7 @@
 
 # The address ViaProxy should listen for connections.
 # This option is not reloadable.
-bind-address: 0.0.0.0:63191
+bind-address: 0.0.0.0:63193
 
 # The address of the server ViaProxy should connect to.
 target-address: 127.0.0.1:25565
