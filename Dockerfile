@@ -17,10 +17,10 @@ WORKDIR $WDR
 RUN export paperServerVersion=1.21.4 \
 	&& export paperBuildNumber=230 \
 	&& echo "Patching jar" \ 
-	&& mkdir /tmp/patching
- 	&& wget https://api.papermc.io/v2/projects/paper/versions/${paperServerVersion}/builds/${paperBuildNumber}/downloads/paper-${paperServerVersion}-${paperBuildNumber}.jar -O /tmp/patching/init.jar
-  	&& java -jar init.jar --paperDir=/tmp/patching --initSettings 
-	&& rm -rf /tmp/patching
+	&& mkdir /tmp/patching \
+ 	&& wget https://api.papermc.io/v2/projects/paper/versions/${paperServerVersion}/builds/${paperBuildNumber}/downloads/paper-${paperServerVersion}-${paperBuildNumber}.jar -O /tmp/patching/init.jar \
+  	&& java -jar init.jar --paperDir=/tmp/patching --initSettings \
+	&& rm -rf /tmp/patching \
    	&& cp /tmp/patching/versions/${paperServerVersion}/*.jar /tmp/server.jar
 COPY . .
 COPY /tmp/server.jar ./server
