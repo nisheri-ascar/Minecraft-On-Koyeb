@@ -15,7 +15,7 @@ RUN export paperServerVersion=1.21.4 \
  	&& wget -q https://api.papermc.io/v2/projects/paper/versions/${paperServerVersion}/builds/${paperBuildNumber}/downloads/paper-${paperServerVersion}-${paperBuildNumber}.jar -O /tmp/init.jar \
   	&& java -jar /tmp/init.jar --paper-dir=/tmp/ --initSettings \
 	&& mkdir -p /home/server/server \
-   	&& cp /tmp/versions/${paperServerVersion}/*.jar /home/server/server.jar \
+   	&& cp /tmp/versions/${paperServerVersion}/*.jar /home/server/server/server.jar \
 	&& rm -rf /tmp/* 
 
 RUN useradd -ms /bin/bash server
