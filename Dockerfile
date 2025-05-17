@@ -12,10 +12,12 @@ WORKDIR /tmp
 RUN export paperServerVersion=1.21.4 \
 	&& export paperBuildNumber=230 \
 	&& echo "Patching jar" \
- 	&& wget -q https://api.papermc.io/v2/projects/paper/versions/${paperServerVersion}/builds/${paperBuildNumber}/downloads/paper-${paperServerVersion}-${paperBuildNumber}.jar -O /tmp/init.jar \
-  	&& java -jar /tmp/init.jar --paper-dir=/tmp/ --initSettings \
+ 	&& wget -q https://api.papermc.io/v2/projects/paper/versions/${paperServerVersion}/builds/${paperBuildNumber}/downloads/paper-${paperServerVersion}-${paperBuildNumber}.jar -O /tmp/server.jar \
+  	&& java -jar /tmp/server.jar --paper-dir=/tmp/ --initSettings \
 	&& mkdir -p /home/server/server \
-   	&& cp /tmp/versions/${paperServerVersion}/*.jar /home/server/server/server.jar \
+   	&& cp -r /tmp/versions /home/server/server/ \
+	&& cp -r /tmp/cache /home/server/server \
+	&& cp /tmp/server.jar /home/server/server \
 	&& rm -rf /tmp/* 
 
 RUN useradd -ms /bin/bash server
