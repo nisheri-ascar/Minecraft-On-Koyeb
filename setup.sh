@@ -24,7 +24,7 @@ chmod 777 bin/playit-binary
 
 #wget -q https://github.com/ViaVersion/ViaRewind/releases/download/${vrVersion}/ViaRewind-${vrVersion}.jar -O server/plugins/ViaRewind.jar
 
-wget -q https://github.com/ViaVersion/ViaProxy/releases/download/v3.4.1/ViaProxy-3.4.1.jar -O viaproxy/ViaProxy.jar
+wget -q https://github.com/ViaVersion/ViaProxy/releases/download/v3.4.1/ViaProxy-3.4.1+java8.jar -O viaproxy/ViaProxy.jar
 
 # Download Geyser, we don't need versioning of it yet it depends on ViaVersion to work if server is older/newer
 wget -q https://download.geysermc.org/v2/projects/geyser/versions/latest/builds/latest/downloads/viaproxy -O viaproxy/plugins/Geyser-ViaProxy.jar
