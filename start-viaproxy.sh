@@ -2,4 +2,4 @@
 
 echo "Starting viaproxy"
 cd viaproxy
-j9-java21 -jar ViaProxy.jar cli &
+j9-java21 -jar -Xms260M -Xmx260 ViaProxy.jar cli &
